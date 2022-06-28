@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+.dark-mode {
+  display:none;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  z-index: 5;
+}
+ 
+.checkbox {
+  display:none;
+  width: auto;
+}
+
+.label {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.18rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.08rem;
+  height: 1.25rem;
+  width: 2.4rem;
+  transform: scale(1.5);
+  border: 1px solid black;
+}
+
+.ball {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+  height: 1rem;
+  width: 1rem;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(1.12rem);
+}
+
+.color-icon {
+  color: rgb(0, 0, 0);
+  height: 0.8rem;
+  width: 0.8rem;
+}
+
+@media (max-width: 630px) {
+  .label {
+    padding: 0.1rem;
+    height: 1rem;
+    width: 1.75rem;
+    border-radius: 0.85;
+    display: flex;
+    justify-content: space-between;
+  }
+  .label i {
+    margin-top: -0.2rem;
+  }
+  .ball {
+    height: 0.75rem;
+    width: 0.75rem;
+  }
+  .color-icon {
+    height: 0.65rem;
+    width: 0.65rem;
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(0.75rem);
+  }
+}

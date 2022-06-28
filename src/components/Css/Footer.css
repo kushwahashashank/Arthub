@@ -1,0 +1,29 @@
+.fa {
+  color: black;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+.fa :hover {
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 8rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 600px) {
+  footer {
+    flex-direction: unset;
+    padding-right: unset;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .fa {
+    color: black;
+    margin: 0.3rem;
+    font-size: 1rem;
+  }
+}

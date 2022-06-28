@@ -1,0 +1,61 @@
+import { v4 as uuidv4 } from "uuid";
+
+const projects = [
+  {
+    distinct: uuidv4(),
+    photo: "Imgs/img1.png",
+    text: "It is a Image",
+    price: 5000,
+    id: "1",
+    desc: "Discriptiom of post",
+    year: "2022",
+    height: "20",
+    width: "30",
+  },
+  {
+    distinct: uuidv4(),
+    photo: "Imgs/img2.png",
+    text: "It is a Image",
+    price: 5500,
+    id: "1",
+    desc: "Discriptiom of post",
+    year: "2022",
+    height: "20",
+    width: "30",
+  },
+  {
+    distinct: uuidv4(),
+    photo: "Imgs/img3.png",
+    text: "It is a Image",
+    price: 7000,
+    id: "1",
+    desc: "Discriptiom of post",
+    year: "2022",
+    height: "20",
+    width: "30",
+  },
+  {
+    distinct: uuidv4(),
+    photo: "Imgs/img4.png",
+    text: "It is a Image",
+    price: 5900,
+    id: "1",
+    desc: "Discriptiom of post",
+    year: "2022",
+    height: "20",
+    width: "30",
+  },
+  {
+    distinct: uuidv4(),
+    photo: "Imgs/img5.png",
+    text: "It is a Image",
+    price: 9600,
+    id: "1",
+    desc: "Discriptiom of post",
+    year: "2022",
+    height: "20",
+    width: "30",
+  },
+];
+
+export default projects;
